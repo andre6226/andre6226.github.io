@@ -1,13 +1,26 @@
-.body {
+/* usa una palette color terra*/
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #272727;
+    background-color: #ffe0b2;
     margin: 0;
     padding: 20px;
 }
 
-.game-board {
-    display: flex;
-    background-color: #efd09e;
+#game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-radius: 10px;
-    padding: 20px
+    padding: 20px;
+    align-items: center;
 }
+
+
+.card {
+    background-color: #dbad67;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+    border: hidden;
+}    flex-wrap: wrap;
