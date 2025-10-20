@@ -2,25 +2,38 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe0b2;
+    background-color: #ffe0b3;
     margin: 0;
     padding: 20px;
 }
 
 #game-board {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #b6863e;
     border-radius: 10px;
     padding: 20px;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
 }
 
-
 .card {
-    background-color: #dbad67;
-    height: 400px;
-    width: 400px;
-    margin: 10px;
+    background-color: #ca9d59;
+    height: 0;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: calc(100% - 4%);
     cursor: pointer;
     border: hidden;
-}    flex-wrap: wrap;
+    border-radius: 4px;
+}
+    
+
+.game-controls {
+    margin-top: 20px;
+    text-align: center;
+}
